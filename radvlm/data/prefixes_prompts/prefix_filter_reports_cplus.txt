@@ -1,0 +1,53 @@
+Please extract and output only the findings from the following radiology report of a Chest X-ray. Your output should:
+* Include only observations directly inferred from the current Chest X-ray.
+* Exclude any references to:
+    - Prior studies or examinations
+    - Patient history or indications
+    - Comparisons with previous images
+    - Which view of the image is provided or analysed 
+    - External information not observable in the current X-ray
+* Omit words like: "unchanged," "comparison," "removed," "since," "previous," "prior", "change", "unchanged", "persistent", etc.
+* Provide only the extracted findings text without any additional comments, explanations, or greetings.
+* Correct the typo and grammatical mistakes, and build correctly punctuated sentences.
+* If there are no findings to extract, output "None".
+
+Examples: 
+
+* Example 1:
+
+    - Input Report:
+interval placement of a right internal jugular venous catheter with tip projecting over the right atrium, 5.3 cm below the level of the carina.  
+unchanged positioning of a right upper extremity picc line with tip projecting over the right atrium, 6.9 cm below the level of the carina. low lung volumes likely accounts for the slight prominence and indistinctness of the pulmonary vessels.  minimal bibasilar atelectasis.  no new focal lung parenchymal consolidation, pleural effusion, or pneumothorax. cholecystectomy clips and incompletely visualized a pigtail catheter is projected over the mid abdomen. 
+
+
+    - Extracted Findings:
+Interval placement of a right internal jugular venous catheter with tip projecting over the right atrium, 5.3 cm below the level of the carina. There is also a right upper extremity picc line with tip projecting over the right atrium, 6.9 cm below the level of the carina. Minimal bibasilar atelectasis.
+No focal lung parenchymal consolidation, pleural effusion, or pneumothorax. Cholecystectomy clips and pigtail catheter are projected over the mid abdomen. 
+
+
+* Example 2:
+
+    - Input Report:
+1.portable semierect chest radiograph demonstrates a right internal jugular sheath in place with a right internal jugular catheter tip in the proximal svc.  two left chest tubes are in place.  tubing projects over the right hemithorax which may be related to an epidural catheter.  a relatively radiolucent endotracheal tube appears to be in the right mainstem bronchus.  the position of the endotracheal tube was discussed with the patient's nurse, leodan walton, dr. on 10/24/2005 at 0918. 2.previously noted marked prominence and tortuosity of the thoracic aorta is changed, compatible with history of recent thoracic aortic aneurysm repair.   cardiomediastinal silhouette demonstrates interval decrease in widening of the superior mediastinum. 3.no new focal pulmonary findings.  slightly diminished lung volumes.  
+
+    - Extracted Findings:
+There is a right internal jugular catheter tip in the proximal svc.  Two left chest tubes are in place. Tubing projects over the right hemithorax which may be related to an epidural catheter. A relatively radiolucent endotracheal tube appears to be in the right mainstem bronchus. 
+There is a marked prominence and tortuosity of the thoracic aorta. Cardiomediastinal silhouette demonstrates a widening of the superior mediastinum. 
+No new focal pulmonary findings. Slightly diminished lung volumes.  
+
+* Example 3:
+
+    - Input Report:
+1.  single supine radiograph of the chest from 0805 hrs demonstrates a small loculated pleural effusion at the right apex.   2.  increasing ill-defined bibasilar opacifications which may reflect consolidation. 3.  persistent small bilateral pleural effusions, right more than left. 4.  single supine radiograph of the chest from 0916 hrs demonstrates further increase in ill-defined bibasilar opacities. 5.  mild pulmonary edema is now present. 6.  interval placement of a right-sided internal jugular central venous catheter.  redemonstration of median sternotomy wires. 
+
+    - Extracted Findings:
+There is a small loculated pleural effusion at the right apex. Ill-defined bibasilar opacifications which may reflect consolidation.
+There are also small bilateral pleural effusions, right more than left, ill-defined bibasilar opacities, and mild pulmonary edema is present.
+Interval placement of a right-sided internal jugular central venous catheter. Median sternotomy wires. 
+
+
+
+* Your Input Report:
+
+    - Input Report:
+    

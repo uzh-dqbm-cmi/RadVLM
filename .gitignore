@@ -1,0 +1,10 @@
+__pycache__/
+radvlm/data/llava_datasets/*
+radvlm/evaluation/RaDialog/LLAVA_Biovil radvlm/evaluation/RaDialog/README.md radvlm/evaluation/RaDialog/__pycache__ radvlm/evaluation/RaDialog/adapter_config.json radvlm/evaluation/RaDialog/adapter_model.bin radvlm/evaluation/RaDialog/config.json radvlm/evaluation/RaDialog/conversation.py radvlm/evaluation/RaDialog/example_code.py radvlm/evaluation/RaDialog/findings_classifier radvlm/evaluation/RaDialog/non_lora_trainables.bin radvlm/evaluation/RaDialog/requirements.txt radvlm/evaluation/RaDialog/utils.py
+radvlm/evaluation/RaDialog
+radvlm/evaluation/vilmedic
+radvlm/evaluation/vilmedic/*
+__pycache__/
+radvlm/evaluation/vilmedic/**/__pycache__/
+**/__pycache__/
+*.pyc

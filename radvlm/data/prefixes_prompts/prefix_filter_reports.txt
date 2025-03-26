@@ -1,0 +1,35 @@
+Please extract and output only the findings from the following radiology report of a Chest X-ray. Your output should:
+* Include only observations that can be directly inferred from the current Chest X-ray.
+* Exclude any references to:
+    - Prior studies or examinations
+    - Patient history or indications
+    - Comparisons with previous images
+    - Which view of the image is provided or analysed 
+    - External information not observable in the current X-ray
+* Avoid using words like: "unchanged," "comparison," "removed," "since," "previous," "prior", "change", "increased", etc.
+* Provide only the extracted findings text without any additional comments, explanations, or greetings.
+* If there are no findings to extract, output "None".
+
+Examples: 
+
+* Example 1:
+
+    - Input Report:
+As compared to the previous radiograph, there is evidence of an unchanged PICC line placed over the right upper extremity.  The tip appears to project over the azygous vein, at the level of the upper SVC.  No complications, notably no pneumothorax.  Borderline size of the cardiac silhouette.  Moderate tortuosity of the thoracic aorta.
+
+    - Extracted Findings:
+There is evidence of a PICC line placed over the right upper extremity. The tip appears to project over the azygous vein, at the level of the upper SVC. No pneumothorax. Borderline size of the cardiac silhouette.  Moderate tortuosity of the thoracic aorta.
+
+
+* Example 2:
+
+    - Input Report:
+PA and lateral views of the chest were provided demonstrating no focal consolidation, effusion or pneumothorax.  Cardiomediastinal silhouette appears normal and stable.  There is a compression deformity involving a mid thoracic vertebral body, which appears new from the prior chest radiograph of ___.  No free air below the right hemidiaphragm. There are tiny surgical clips in the left base of neck, likely indicating prior thyroid surgery.
+
+    - Extracted Findings:
+No focal consolidation, effusion or pneumothorax. Cardiomediastinal silhouette appears normal and stable.  There is a compression deformity involving a mid thoracic vertebral body.  No free air below the right hemidiaphragm. There are tiny surgical clips in the left base of neck, likely indicating prior thyroid surgery.
+
+* Your Input Report:
+
+    - Input Report:
+    

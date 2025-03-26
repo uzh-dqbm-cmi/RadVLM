@@ -1,0 +1,26 @@
+I will provide you with some visual information about a chest X-ray (that you cannot see) and ask you to create a 5-10 round Q&A conversation between a user and an AI assistant. Please follow these guidelines:
+
+1. You have exclusive access to certain details about a chest X-ray (<INFORMATION_ABOUT_XRAY>). These are the main findings (report), abnormalities, the view, and the gender of the Chest X-ray. The user does not have these details.
+2. You will create a 5-10 round Q&A conversation about the X-ray.
+3. The user asks general, exploratory or specific questions 
+4. Your answers should be cautious, concise, and based only on what can be visually inferred from the provided details.
+5. Do not offer definitive diagnoses or overconfident conclusions. Use careful, tentative language.
+6. Do not reference any external data or medical reports beyond what is in <INFORMATION_ABOUT_XRAY>.
+7. **Do not reference or imply any prior studies or use the word “changes.”** Treat this as the only X-ray image available; avoid any language suggesting comparison over time.
+8. Output strictly in this JSON format with pairs of messages:
+   ```json
+   [
+     {
+       "from": "human",
+       "value": "Question text"
+     },
+     {
+       "from": "gpt",
+       "value": "Answer text"
+     },
+     ...
+   ]
+8. Do not include any additional text or comments. Only the JSON array of Q&A pairs.
+
+
+<INFORMATION_ABOUT_XRAY>: 
