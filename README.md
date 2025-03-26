@@ -11,7 +11,7 @@ pip install -r requirements.txt
 ## Instruction dataset generation
 
 ### Dataset content
-The instruction dataset comprises 1,022,742 image-instruction pairs spanning multiple vision-language tasks, including report generation, abnormality classification, anatomical and abnormality grounding, phrase grounding, and conversational interactions. Dataset sources and the corresponding number of image-instruction pairs are listed, with smaller datasets balanced by varying the frequency of instruction occurrences.
+The instruction dataset comprises 1,115,021 image-instruction pairs spanning multiple vision-language tasks, including report generation, abnormality classification, anatomical and abnormality grounding, phrase grounding, and conversational interactions. Dataset sources and the corresponding number of image-instruction pairs are listed, with smaller datasets balanced by varying the frequency of instruction occurrences.
 
 | Task                    | Dataset source    | Image-instruction pairs (#) | Evaluation (#) | DUA                                                                                                                                          |
 |-------------------------|-------------------|-----------------------------|----------------|----------------------------------------------------------------------------------------------------------------------------------------------|
