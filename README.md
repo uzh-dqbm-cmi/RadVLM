@@ -91,7 +91,7 @@ export DATA_DIR=/home/username/datasets
 In the above architecture, the files or folders marked with a `*` were not orginally part of the available datasets, and we describe below the procedure to generate each of them. The rest of the files are directly available in the official repositories. 
 
 ## Set up Azure OpenAI
-In order to generate synthetic data (see below), following the [physionet guidelines](https://physionet.org/news/post/gpt-responsible-use) you will need to set up environmental variables required to run Azure OpenAI API call, following . In particular, the following variables should be defined:
+In order to generate synthetic data (see below), following the [physionet guidelines](https://physionet.org/news/post/gpt-responsible-use), you will need to set up environmental variables required to run Azure OpenAI API call. In particular, the following variables should be defined:
 ```
 export AZURE_OPENAI_API_KEY=<your azure openai key>
 export AZURE_OPENAI_ENDPOINT=<your azure openai endpoint>
