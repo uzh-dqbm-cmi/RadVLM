@@ -33,7 +33,6 @@ WORKDIR="$SCRATCH/code/RadVLM"
 srun -ul  --environment=llava_env_clariden bash -c "
   cd $WORKDIR  # Change cwd and run the main training script.
   export PYTHONPATH=$WORKDIR/finetuning
-  export WANDB_API_KEY=81291d9e2d99efeb2a4e3f4d507abe879e646a22
   TORCHRUN_ARGS=\"
    --node-rank=\${SLURM_PROCID} \
    --master-addr=\${MASTER_ADDR} \
